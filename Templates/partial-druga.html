@@ -1,0 +1,21 @@
+﻿<div id="wrapper2">
+    <div ng-controller="chatController">
+
+        <div id="chatbox">
+            <ul class="conver">
+                <li ng-repeat="chat in messages track by $index">
+                    <span>{{chat}}</span>
+                </li>
+            </ul>
+
+        </div>
+        <form id="form">
+            <input type="text" ng-model="message" name="usermsg" id="usermsg" size="62" />
+            <!--  <input type="submit"  name="submitmsg" id="submitmsg" value="Send"/> -->
+            <span id="envelope" ng-click="newMessage()">&#9993;</span>
+
+        </form>
+       </div>
+
+        </div>
+

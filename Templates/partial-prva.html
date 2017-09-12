@@ -1,0 +1,31 @@
+﻿<div id="wrapper" ng-controller="homeController">
+    <div id="menu">
+        <p class="welcome">
+            <!--<a> All messages</a>-->
+        </p>
+        <p class="welcome">
+            <input ng-model="userName" />
+            <input ng-model="password" type="password" />
+            <span class="symbol" ng-click="login()">&#10000;</span>
+            <hr>
+        </p>
+        <p class="welcome2">
+            <input ng-model="newConversation" />
+            <input ng-model="newConversationMembers" />
+            <span class="symbol" ng-click="createConversation()">&#10000;</span>
+            <hr>
+            </p>
+
+
+</div>
+    <div id="contact">
+        <ul>
+            <li ng-repeat="chat in conversations">
+                <span class="list" ng-click="openConversation(chat.id)">{{chat.name}}</span>
+            </li>
+        </ul>
+        
+    </div>
+
+
+</div>
